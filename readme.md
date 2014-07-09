@@ -1,3 +1,16 @@
+# P3 - Brent Lanier - CSCI S-15 (Summer 2014)
+
+## PROD URL
+<http://p3.cscis15.lanier.us/>
+
+## P3 Description
+
+## Details for Instructor(s)
+
+## Outside code
+* 
+* 
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)

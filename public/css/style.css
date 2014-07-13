@@ -1,0 +1,94 @@
+#passwd_form {
+    width:500px;
+    padding:20px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+    background:#FAFAFA;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#passwd_form legend {
+    font-size: 30px;
+    color: #6894c9;
+    text-align: center;
+}
+
+#passwd_form label {
+    display: block;
+    margin-bottom:5px;
+}
+
+#passwd_form label span {
+    float:left;
+    width:250px;
+    color:#666666;
+}
+
+#passwd_form input {
+    height: 25px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    padding-left: 4px;
+    color: #666;
+    width: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit_btn {
+    border: 1px solid #D8D8D8;
+    padding: 5px 15px 5px 15px;
+    color: #8D8D8D;
+    text-shadow: 1px 1px 1px #FFF;
+    border-radius: 3px;
+    background: #F8F8F8;
+}
+
+.submit_btn:hover {
+    background: #ECECEC;
+}
+.success {
+    background: #3ded09;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #43ec89;
+    border-radius: 5px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+}
+
+.error {
+    background: #FFDFDF;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #FFCACA;
+    border-radius: 5px;
+    font-weight: normal;
+}
+
+#info {
+    width:800px;
+    padding:20px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6894c9;
+    background:#FAFAFA;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

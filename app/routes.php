@@ -13,5 +13,22 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('index');
 });
+
+Route::get('/lorem-ipsum-generator', function()
+{
+    return View::make('li-generator');
+});
+
+Route::get('/random-number-generator', function()
+{
+    return View::make('rn-generator');
+});
+
+Route::get('/xkcd-password-generator', function()
+{
+    return View::make('xkcd-generator');
+});
+
+

@@ -31,4 +31,7 @@ Route::get('/xkcd-password-generator', function()
     return View::make('xkcd-generator');
 });
 
+Route::post('/generateLI', 'P3@generateLI');
+
+Route::post('/generatePassword', 'P3@generatePassword');
 

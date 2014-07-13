@@ -9,8 +9,6 @@ XKCD Password Generator
     <!-- Site CSS -->
     {{ HTML::style('css/style.css') }}
 
-    {{ HTML::script('js/xkcd.js') }}
-
     <script type="text/javascript">
         $(document).ready(function() {
             $("#submit_btn").click(function() {
@@ -30,16 +28,13 @@ XKCD Password Generator
                     proceed = false;
                 }
 
-                console.log('This has been written to log');
-
                 if(proceed)
                 {
                     // JSON data sent to PHP form for processing
                     post_data = {'numWords':numWords, 'SpecChar':SpecChar, 'capFirstChar':capFirstChar, 'caseOpt':caseOpt, 'incNum':incNum, 'maxLength':maxLength};
 
                     //Ajax response
-                    $.post(@include('includes.logic'), post_data, function(response){
-
+                    $.post('/generatePassword', post_data, function(response){
 
                         // Load JSON data and display
                         if(response.type == 'error')
@@ -70,7 +65,6 @@ XKCD Password Generator
     <!--  XKCD Password Form  -->
     <fieldset id="passwd_form">
         <legend>XKCD Password Options</legend>
-        <div id="result"></div>
 
         <label for="numWords"><span>Word Length:</span>
             2 <input name="numWords" id="numWords" type="range" min="2" max="8" step="1" value="2"/> 8
@@ -102,6 +96,9 @@ XKCD Password Generator
         <label><span>&nbsp;</span>
             <button class="submit_btn" id="submit_btn">Submit</button>
         </label>
+        <br/>
+        <div id="result"></div>
+
     </fieldset>
     <div id="info">
         <p>The XKCD Password Generator is a handy tool that creates secure<br/>passwords based on combinations of everyday words.</p>

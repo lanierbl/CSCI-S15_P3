@@ -35,7 +35,8 @@ Lorem Ipsum Generator
                     {
                         output = '<div class="error">'+response.text+'</div>';
                     } else {
-                        output = '<div class="success">'+response.text+'</div>';
+                        var json_text = response.text.join("<p>");
+                        output = '<div class="success">'+json_text+'</div>';
                     }
 
                     $("#result").hide().html(output).slideDown();
@@ -68,9 +69,10 @@ Lorem Ipsum Generator
             <label><span>&nbsp;</span>
                 <button class="submit_btn" id="submit_btn">Submit</button>
             </label>
-            <br/>
-            <div id="result"></div>
         </fieldset>
+        <div id="info">
+            <div id="result"></div>
+        </div>
 
     </div>
 

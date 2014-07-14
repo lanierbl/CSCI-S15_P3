@@ -21,9 +21,9 @@ Route::get('/lorem-ipsum-generator', function()
     return View::make('li-generator');
 });
 
-Route::get('/random-number-generator', function()
+Route::get('/random-user-generator', function()
 {
-    return View::make('rn-generator');
+    return View::make('ru-generator');
 });
 
 Route::get('/xkcd-password-generator', function()
@@ -33,5 +33,11 @@ Route::get('/xkcd-password-generator', function()
 
 Route::post('/generateLI', 'P3@generateLI');
 
+Route::post('/generateRU', 'P3@generateRU');
+
 Route::post('/generatePassword', 'P3@generatePassword');
 
+Route::get('/test', function()
+{
+    return View::make('test');
+});

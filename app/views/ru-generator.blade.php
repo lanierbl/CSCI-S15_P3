@@ -11,7 +11,12 @@ Random User Generator
     $(document).ready(function() {
         $("#submit_btn").click(function() {
             //Set form variables to be sent via JSON
-            var numUsers = $('input[name=numUsers]').val();
+            var numUsers        = $('input[name=numUsers]').val();
+            var Address         = document.getElementById("Address").checked ? 1 : 0;
+            var Birthdate       = document.getElementById("Birthdate").checked ? 1 : 0;
+            var Profile         = document.getElementById("Profile").checked ? 1 : 0;
+
+
 
             var proceed = true;
 
@@ -35,7 +40,18 @@ Random User Generator
                     {
                         output = '<div class="error">'+response.text+'</div>';
                     } else {
-                        output = '<div class="success">'+response.text+'</div>';
+                        output = '<div class="success">'
+                        for (i = 0; i < response.text.length; i++) {
+                            output += "Name: " + response.text[i].name + "<br/>";
+                            if (Address == 1)
+                                output += "Address: " + response.text[i].address + "<br/>";
+                            if (Birthdate == 1)
+                                output += "Birthdate: " + response.text[i].birthdate + "<br/>";
+                            if (Profile == 1)
+                                output += "Profile: " + response.text[i].profile + "<br/>";
+                            output += "<br/>";
+                        }
+                        output += '</div>';
                     }
 
                     $("#result").hide().html(output).slideDown();
@@ -61,8 +77,20 @@ Random User Generator
     <fieldset id="passwd_form">
         <legend>Random User Generator</legend>
 
-        <label for="numParagraphs"><span>Number of Users (Max: 99)</span>
+        <label for="numUsers"><span>Number of Users (Max: 99)</span>
             <input name="numUsers" id="numUsers" type="number" min="0" max="99" value="3">
+        </label>
+
+        <label for="Address"><span>Address</span>
+            <input name="Address" id="Address" type="checkbox"/>
+        </label>
+
+        <label for="Birthdate"><span>Birthdate</span>
+            <input name="Birthdate" id="Birthdate" type="checkbox"/>
+        </label>
+
+        <label for="Profile"><span>Profile</span>
+            <input name="Profile" id="Profile" type="checkbox"/>
         </label>
 
         <label><span>&nbsp;</span>

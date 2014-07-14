@@ -33,4 +33,12 @@ $faker = Faker\Factory::create();
 // Ea quaerat et quisquam. Deleniti sunt quam. Adipisci consequatur id in occaecati.
 // Et sint et. Ut ducimus quod nemo ab voluptatum.
 
-print_r(array_values($faker));
+$array =  array(
+        "name"  => $faker->name,
+        "address" => $faker->address,
+        "text" => $faker->text
+);
+
+print_r(array_values($array));
+
+var_dump($array);

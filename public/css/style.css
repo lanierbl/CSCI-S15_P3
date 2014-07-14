@@ -15,7 +15,7 @@
 #passwd_form legend {
     font-size: 30px;
     color: #6894c9;
-    text-align: left;
+    text-align: center;
 }
 
 #passwd_form label {
@@ -52,14 +52,18 @@
     background: #ECECEC;
 }
 .success {
-    background: #3ded09;
+    background: #FAFAFA;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #43ec89;
     border-radius: 5px;
+    color: #6894c9;
     font-weight: normal;
     text-align: center;
     font-size: 16px;
+}
+
+.success p {
+    text-align: left;
 }
 
 .error {
@@ -84,11 +88,27 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 15px;
-    text-align: center;
+    text-align: left;
+}
+
+#info.name {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 img.displayed {
     display: block;
     margin-left: auto;
     margin-right: auto
+}
+
+#info h4 {
+    display: inline;
+    text-align: center;
+    color: #6894c9;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #6894c9;
 }

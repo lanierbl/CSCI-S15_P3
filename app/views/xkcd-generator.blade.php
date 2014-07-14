@@ -62,6 +62,8 @@ XKCD Password Generator
 @stop
 
 @section('content')
+
+    <a href='/'><- Back</a>
     <!--  XKCD Password Form  -->
     <fieldset id="passwd_form">
         <legend>XKCD Password Options</legend>

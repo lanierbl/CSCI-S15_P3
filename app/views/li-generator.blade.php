@@ -35,7 +35,8 @@ Lorem Ipsum Generator
                     {
                         output = '<div class="error">'+response.text+'</div>';
                     } else {
-                        var json_text = response.text.join("<p>");
+                        var json_text = "<p>";
+                        json_text += response.text.join("<p>");
                         output = '<div class="success">'+json_text+'</div>';
                     }
 
@@ -56,6 +57,8 @@ Lorem Ipsum Generator
 @stop
 
 @section('content')
+
+    <a href='/'><- Back</a>
 
     <div class="container">
 

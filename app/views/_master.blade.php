@@ -18,7 +18,7 @@
 <body>
 
 
-    <a href='/'><- Back</a>
+
 
     @yield('content')
 

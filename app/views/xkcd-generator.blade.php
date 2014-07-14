@@ -100,11 +100,12 @@ XKCD Password Generator
         <div id="result"></div>
 
     </fieldset>
-    <div id="info">
+    <fieldset id="info">
+        <legend><h2>Info</h2></legend>
         <p>The XKCD Password Generator is a handy tool that creates secure<br/>passwords based on combinations of everyday words.</p>
         <p>Additional options are available to further personalize your password.</p>
         <p>This tool was inspired by the popular XKCD comic:</p>
         <a href='http://xkcd.com/936/'><img class='displayed' src='<?php echo URL::asset('images/xkcd_passwd.png'); ?>' alt=''></a>
-    </div>
+    </fieldset>
 
 @stop

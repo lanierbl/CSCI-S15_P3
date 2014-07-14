@@ -70,9 +70,11 @@ Lorem Ipsum Generator
                 <button class="submit_btn" id="submit_btn">Submit</button>
             </label>
         </fieldset>
-        <div id="info">
+
+        <fieldset id="info">
+            <legend><h2>Result</h2></legend>
             <div id="result"></div>
-        </div>
+        </fieldset>
 
     </div>
 

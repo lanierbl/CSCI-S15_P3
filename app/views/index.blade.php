@@ -4,10 +4,24 @@
 Programmer's Best Friend
 @stop
 
-@section('content')
-<h1>Welcome to Programmer's Best Friend</h1>
+@section('head')
+{{ HTML::style('css/style.css') }}
+@stop
 
-<a href='/lorem-ipsum-generator'>Lorem Ipsum Generator</a><br/>
-<a href='/random-user-generator'>Random User Generator</a><br/>
-<a href='/xkcd-password-generator'>XKCD Password Generator</a><br/>
+@section('content')
+
+<div class="container">
+
+    <fieldset id="passwd_form">
+        <legend>Programmer's Best Friend</legend>
+
+        <a href='/lorem-ipsum-generator'>Lorem Ipsum Generator</a><br/>
+        <a href='/random-user-generator'>Random User Generator</a><br/>
+        <a href='/xkcd-password-generator'>XKCD Password Generator</a><br/>
+
+    </fieldset>
+
+</div>
+
+
 @stop

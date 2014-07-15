@@ -11,9 +11,9 @@ The objective of this project was to provide hands-on experience with the Larave
 
 The URI's for the functions in the P3 controller are specified in the routes.php file and these PHP functions are called in the Javascript of each corresponding view.
 
-The packages that were specified in the P3 spec for the random user / lorum ipsum generator were used - The methods of these packages are called in the P3 controller.  User options for each "application" are passed via JSON to the controller for processing.  The JSON response contains all data returned by the external packages.
+The packages that were specified in the P3 spec for the random user / lorem ipsum generator were used - The methods of these packages are called in the P3 controller.  User options for each "application" are passed via JSON to the controller for processing.  The JSON response contains all data returned by the external packages.
 
-In the lorum ipson generator, the JSON object contains the paragraphs (# specified by user) and the client-side Javascript formats the paragraphs for display.
+In the lorem ipsum generator, the JSON object contains the paragraphs (# specified by user) and the client-side Javascript formats the paragraphs for display.
 
 In the random user generator, the JSON object contains a two-dimensional array of user objects that the client-side Javascript loops through, pulling out each random user for display (displays only information that the user has selected).
 

@@ -5,11 +5,28 @@
 
 ## P3 Description
 
+The objective of this project was to provide hands-on experience with the Laravel PHP framework, notably working with routes and views.  In addition to working with these items, I also needed to incorporate a new controller to handle my server-side processing.  All three of my "applications" are using AJAX and JSON and the PHP processing is handled by various functions in the P3 controller.
+
 ## Details for Instructor(s)
 
+The URI's for the functions in the P3 controller are specified in the routes.php file and these PHP functions are called in the Javascript of each corresponding view.
+
+The packages that were specified in the P3 spec for the random user / lorum ipsum generator were used - The methods of these packages are called in the P3 controller.  User options for each "application" are passed via JSON to the controller for processing.  The JSON response contains all data returned by the external packages.
+
+In the lorum ipson generator, the JSON object contains the paragraphs (# specified by user) and the client-side Javascript formats the paragraphs for display.
+
+In the random user generator, the JSON object contains a two-dimensional array of user objects that the client-side Javascript loops through, pulling out each random user for display (displays only information that the user has selected).
+
+For the XKCD password generator, the JSON object returns the requested password.
+
+All forms POST is done via AJAX.
+
 ## Outside code
-* 
-* 
+* jQuery:  http://jquery.com
+* Laravel:  http://laravel.com
+* badcow/lorem-ipsum Package:  https://packagist.org/packages/badcow/lorem-ipsum
+* fzaninotto/faker package:  https://packagist.org/packages/fzaninotto/faker
+* Stack Overflow:  http://www.stackoverflow.com
 
 ## Laravel PHP Framework
 
